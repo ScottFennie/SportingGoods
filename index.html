@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>SportingGoods</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="text-white collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" onclick="app.skisController.goHome()" aria-current="page" href="# ">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " onclick="app.skisController.showSkis() " href="# ">Skis</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " onclick="app.gunsController.showGuns() " href="# ">Guns</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " onclick="app.apparelsController.showApparel() " href="# " tabindex="-1 " aria-disabled="true ">Apparel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class=" pe-2 bi bi-cart-check-fill" viewBox="0 0 16 16">
+              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+            </svg>
+            <span id="cart" class="">:0</span>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid ">
+            <div class="row " id="product-card">
+                <!-- this is where the card will draw -->
+            </div>
+        </div>
+
+    </main>
+    <footer class="bg-dark text-light ">
+        <div class="text-center no-select ">
+            <p><small>Made with 💖 by The Brahskis</small></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous "></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
